@@ -1,8 +1,7 @@
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import React from "react";
 import ReactDOM from "react-dom/client";
-import "./index.css";
-import MainLayuts from "./layouts/MainLayuts";
+import MainLayout from "./layout/MainLayout";
 
 // lesson
 import Home from "./pages/Home/Home";
@@ -11,13 +10,14 @@ import Category from "./pages/Category/Category";
 import Recipe from "./pages/Recipe/Recipe";
 import Random from "./pages/Random/Random";
 
-// import App from "./App.jsx";
+// style.css
+import "./index.css";
 
 const router = createBrowserRouter(
   [
     {
       path: "/",
-      element: <MainLayuts />,
+      element: <MainLayout />,
       children: [
         {
           index: true,
